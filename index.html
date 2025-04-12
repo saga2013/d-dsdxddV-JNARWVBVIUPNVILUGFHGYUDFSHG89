@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Translate App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="tran">
+    <h1>Translate App</h1>
+
+    <div>
+      <input id="inputText" class="inp" type="text" placeholder="Enter text...">
+      <button class="speakBtn" data-target="inputText">🔊</button>
+    </div>
+
+    <select id="fromLang">
+      <option id="en">English</option>
+      <option id="es">Spanish</option>  
+      <option id="ru">Russian</option>
+    </select>
+
+    <div>
+      <input id="outputText" class="inp" type="text" readonly placeholder="Translation appears here...">
+      <button class="speakBtn" data-target="outputText">🔊</button>
+    </div>
+
+    <select id="toLang">
+      <option id="es">Spanish</option>
+      <option id="ru">Russian</option>  
+      <option id="en">English</option>
+    </select>
+
+    <button id="translateBtn">Translate</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
